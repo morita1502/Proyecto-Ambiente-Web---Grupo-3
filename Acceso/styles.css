@@ -1,0 +1,237 @@
+/*Variables de los colores*/
+:root{
+    --azul-agua: #057FCB;
+    --azul-oscuro: #00498B;
+    --azul-celeste: #209DE8;
+    --azul-gris: #4F678A;
+    --fondo: #F5FAFE;
+    --blanco: #FFFFFF;
+}
+
+/*Estilos Log In y configuraciones generales*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--azul-oscuro);
+}
+
+/*Centrar el formulario*/
+.login-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+/*Tarjeta de inicio de sesion*/
+.login-card{
+    background-color: var(--blanco);
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 73, 139, 0.12);
+}
+
+/*Logo*/
+.logo{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+/*Titulos*/
+.system-title{
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--azul-oscuro);
+    margin-bottom: 0;
+}
+
+.system-subtitle{
+    font-size: 19px;
+    color: var(--azul-agua);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-text{
+    color: var(--azul-gris);
+    font-size: 15px;
+}
+
+/*Campos del formulario*/
+.form-label{
+    font-weight: bold;
+    color: var(--azul-oscuro);
+}
+
+.form-control{
+    padding: 11px;
+    border: 1px solid #CCD9E5;
+}
+
+.form-control:focus{
+    border-color: var(--azul-celeste);
+    box-shadow: 0 0 0 0.2rem rgba(32, 157, 232, 0.2);
+}
+
+/*Boton para mostrar contraseña*/
+.btn-outline-secondary{
+    color: var(--azul-oscuro);
+    border-color: #CCD9E5;
+}
+
+/*Boton de inicio de sesion*/
+.btn-login{
+    background-color: var(--azul-agua);
+    color: var(--blanco);
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-login:hover{
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+/*Enlaces*/
+.login-link{
+    color: var(--azul-agua);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover{
+    color: var(--azul-oscuro);
+    text-decoration: underline;
+}
+
+.register-text{
+    color: var(--azul-gris);
+    font-size: 14px;
+}
+
+.footer-text{
+    color: var(--azul-gris);
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+/*Estilos extra Sign In*/
+.register-card{
+    max-width: 520px;
+}
+
+.location-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--azul-oscuro);
+    margin-bottom: 18px;
+}
+
+/*Boton para regresar al login*/
+.register-card .btn-outline-primary{
+    color: var(--azul-agua);
+    border-color: var(--azul-agua);
+    padding: 11px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.register-card .btn-outline-primary:hover{
+    background-color: var(--azul-agua);
+    color: var(--blanco);
+}
+
+/*Campos invalidos*/
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: #dc3545;
+}
+
+/*Estilos extra Recuperar contraseña*/
+.recovery-card{
+    max-width: 460px;
+}
+
+.recovery-title{
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--azul-oscuro);
+    margin-bottom: 12px;
+}
+
+/*Logo*/
+.logo2{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+/*Boton para volver al login*/
+.recovery-card .btn-outline-primary{
+    color: var(--azul-agua);
+    border-color: var(--azul-agua);
+    padding: 11px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.recovery-card .btn-outline-primary:hover{
+    background-color: var(--azul-agua);
+    color: var(--blanco);
+}
+
+/*Ajustes para celulares*/
+/*Log In*/
+@media (max-width: 480px){
+    .login-container{
+        padding: 15px;
+    }
+
+    .login-card{
+        padding: 25px 20px;
+    }
+
+    .logo{
+        width: 90px;
+        height: 90px;
+    }
+
+    .system-title{
+        font-size: 23px;
+    }
+}
+
+/*Sign In*/
+@media (max-width: 480px){
+    .register-card{
+        padding: 22px 18px;
+    }
+
+    .location-title{
+        font-size: 17px;
+    }
+}
+
+/*Forget Password*/
+@media (max-width: 480px){
+    .recovery-card{
+        padding: 22px 18px;
+    }
+
+    .recovery-title{
+        font-size: 19px;
+    }
+}

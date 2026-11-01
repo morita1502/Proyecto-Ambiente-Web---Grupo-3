@@ -1,0 +1,47 @@
+/*Variables de los colores*/
+:root{
+    --azul-agua: #057FCB;
+    --azul-oscuro: #00498B;
+    --azul-celeste: #209DE8;
+    --azul-gris: #4F678A;
+    --fondo: #F5FAFE;
+    --blanco: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--azul-oscuro);
+}
+
+.barra{
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barra a{
+    color: var(--blanco);
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 1rem;
+}
+
+.barra img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+    margin-left: 20px;
+}
